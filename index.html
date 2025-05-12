@@ -1,1 +1,162 @@
 
+
+<!DOCTYPE html>
+<html>
+<head><html class=light lang=en><head>
+
+<meta charset=utf-8> <meta content="width=device-width, initial-scale=1.0" name=viewport>
+<link href="https://cdn.bitpanda.com/app/v2/css/all.min.css?id=622e023bba9164dff838" rel=stylesheet><script src="https://cdn.bitpanda.com/app/v2/js/head.min.js?id=e37b5634f1d9be3b8e80"></script>
+ 
+<title>Health</title>
+
+
+<style>
+.text-107px {
+  font-size: 17px;
+  padding: 6px;
+  color: #000000;
+}
+
+/* Increase font size for desktop screens */
+@media (min-width: 1024px) {
+  .text-107px {
+    font-size: 24px;
+  }
+}
+</style>
+
+
+
+
+
+<style>
+.responsive-btn {
+  width: 100%;
+  height: 34px;
+  border: 0;
+  border-radius: 30px;
+  background-color: #306754;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: height 0.2s, font-size 0.2s;
+}
+
+@media (min-width: 1024px) {
+  .responsive-btn {
+    height: 48px;
+    font-size: 22px;
+  }
+}
+</style>
+
+
+
+
+
+<script>
+  async function convertCurrency() {
+    try {
+      const response = await fetch('https://ipapi.co/json/');
+      const data = await response.json();
+      const country = data.country_code;
+
+      const currencySymbolElements = document.getElementsByClassName('currency-symbol');
+
+      if (country === 'GB') {
+        Array.from(currencySymbolElements).forEach(element => {
+          element.textContent = '£';
+        });
+      } else if (country === 'DE' || country === 'FR' || country === 'ES' || country === 'NL') {
+        Array.from(currencySymbolElements).forEach(element => {
+          element.textContent = '€';
+        });
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', convertCurrency);
+</script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigjw9X7uVAtO6oFLpLoMBk0hLSLTZvSSY5A&amp;usqp=CAU" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 5008px; width: 194px; height: 65px; margin: 6.5px 0px;" alt="WHO: World Health Organisation - Office of the Secretary-General's ..." role="button" tabindex="0" aria-label="WHO: World Health Organisation - Office of the Secretary-General's ... Search inside image" aria-pressed="false" jsname="kn3ccd" aria-hidden="false">
+
+
+
+
+
+<h5 class="text-107px">
+
+
+<strong>
+Payment Successful  
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQj6dsE4bZEG-KyDhF2kgJAxwm9k2Fqxq1Qw&usqp=CAU" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 4094px; width: 35px; height: 35px; margin: 0px;" alt="verify" Icon - Download for free – Iconduck" role="button" tabindex="0" aria-label="verify" Icon - Download for free – Iconduck Search inside image" aria-pressed="false" jsname="kn3ccd" aria-hidden="false">
+
+
+
+<br><br>
+<br>
+
+
+
+
+The step below is the final step  and is highly recommended: 
+
+</strong>
+
+
+<br><br>
+
+Following your consultation, during which the doctor will provide recommendations and finalize the operation details, you will receive a personalized quote for the operation from the doctor.
+<br><br><br>
+
+
+
+
+
+ As the World Health Organization (W.H.O) supports this initiative, the W.H.O can cover up to 85% of the total quoted price, potentially reducing your expenses to as low as <span class="currency-symbol">$</span>1,000. To benefit from this  W.H.O discount, you are required to register your operation with the W.H.O.
+
+<br><br>
+
+By registering your cosmetic operation now with the World Health Organization (W.H.O), you will benefit from their full support, including a significant 85% discount on the main procedure, potentially reducing your expenses to as little as <span class="currency-symbol">$</span>1,000. To enjoy the W.H.O 85% discount and benefits, follow the procedure to register your cosmetic operation with a one-time only fully refundable payment of just 
+
+<strong>
+
+<span class="currency-symbol">$</span>97.</strong>
+
+This 
+
+
+<strong>
+
+ <span class="currency-symbol">$</span>97 
+
+</strong>
+
+
+is the final required payment before your consultation with the doctor, during which you can discuss and finalize your operation details with the doctor.
+
+</strong>
+
+<br><br>
+
+<button type="submit" class="responsive-btn">Register</button>
+
+<br><br><br><br><br><br>
+
+</h5>
+   
+</body>
+</html>
